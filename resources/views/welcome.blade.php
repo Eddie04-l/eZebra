@@ -42,8 +42,7 @@
             color: #000;
             font-weight: bold;
         }
-        /* Navbar Styling */
-.navbar {
+        .navbar {
     background-color: #101820; /* Dark background */
     padding: 1rem 2rem;
 }
@@ -77,17 +76,36 @@
     background-color: #F5A623; /* Change hamburger icon color */
 }
 
+/* Mobile Menu (Slide-in Effect) */
 @media (max-width: 992px) {
     .navbar-collapse {
-        background-color: #101820; /* Dark background for collapsible menu */
-        border-radius: 10px;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 75%; /* Adjust width as needed */
+        background-color: #101820;
+        transition: left 0.5s ease;
+        z-index: 999;
     }
 
     .navbar-nav .nav-link {
-        padding: 15px 20px;
         font-size: 1.25rem;
+        padding: 15px 20px;
+    }
+
+    .navbar-toggler.collapsed + .navbar-collapse {
+        left: 0;
     }
 }
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 1.5rem; /* Larger text size for small screens */
+        padding: 20px 30px;
+    }
+}
+
 
         /* Hero Section Styling */
 .hero {
@@ -682,36 +700,38 @@
 </style>
 <body class="bg-dark p-2">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-warning" href="#">eZebra</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#why">Why eZebra?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#vision">Our Vision</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#join">Join Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand text-warning fw-bold" href="#">eZebra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#why">Why eZebra?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#vision">Our Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#join">Join Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
     
 
     <!-- Landing Page Hero Section -->
