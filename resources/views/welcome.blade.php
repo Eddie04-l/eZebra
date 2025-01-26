@@ -85,7 +85,7 @@
         left: -100%;
         height: 100%;
         width: 75%; /* Adjust width as needed */
-        background-color: #101820;
+        background-color: rgba(0, 0, 0, 0.6);
         transition: left 0.5s ease;
         z-index: 999;
     }
