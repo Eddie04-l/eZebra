@@ -42,7 +42,8 @@
             color: #000;
             font-weight: bold;
         }
-        .navbar {
+        /* Navbar Styling */
+.navbar {
     background-color: #101820; /* Dark background */
     padding: 1rem 2rem;
 }
@@ -94,7 +95,17 @@
         padding: 15px 20px;
     }
 
+    /* The navbar will remain visible when toggled */
     .navbar-toggler.collapsed + .navbar-collapse {
+        left: 0;
+    }
+
+    /* Close the navbar if you click a nav link */
+    .navbar-nav .nav-link:focus {
+        outline: none;
+    }
+
+    .navbar-collapse.show {
         left: 0;
     }
 }
@@ -105,6 +116,7 @@
         padding: 20px 30px;
     }
 }
+
 
 
         /* Hero Section Styling */
@@ -701,37 +713,38 @@
 <body class="bg-dark p-2">
 
     <!-- Navbar Section -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
-    <div class="container-fluid">
-        <a class="navbar-brand text-warning fw-bold" href="#">eZebra</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#why">Why eZebra?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#vision">Our Vision</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#join">Join Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#contact">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fw-bold" href="#">eZebra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#why">Why eZebra?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#vision">Our Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#join">Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
+    
+    
     
 
     <!-- Landing Page Hero Section -->
