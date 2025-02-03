@@ -869,9 +869,9 @@
                         </div>
                         <!-- Feature 3 -->
                         <div class="col-md-6 wow fadeInUp" data-wow-delay="1.1s">
-                            <div class="custom-card shadow-lg rounded bg-info text-white p-4" style="opacity: 0.9">
-                                <i class="material-icons md-48 mb-3 text-warning">battery_swap</i>
-                                <h3 class="text-warning">Battery Swap Technology</h3>
+                            <div class="custom-card shadow-lg rounded bg-info text-dark p-4" style="opacity: 0.9">
+                                <i class="material-icons" style="font-size: 48px; color: #000;">battery_charging_full</i>
+                                <h3 class="text-dark">Battery Swap Technology</h3>
                                 <p>Our cutting-edge battery swapping system minimizes downtime, enabling operators to keep their fleets on the road and their businesses moving forward.</p>
                             </div>
                         </div>
